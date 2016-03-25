@@ -1,1 +1,1 @@
-requests<=2.9.1
+python-ubersmithclient==1.0.8
