@@ -11,5 +11,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 
+import pkg_resources
+import warnings
+
 from . import api
 from . import exceptions
+
+if 'ubersmith-client' in [i.project_name for i in pkg_resources.working_set]:
+    warnings.warn("ubersmith-client lib is deprecated, please use python-ubersmithclient instead", DeprecationWarning)
